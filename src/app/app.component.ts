@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'clarity-combobox';
+  letterCombos = ['ab', 'ac', 'ad'];
+  selected: string;
 }
