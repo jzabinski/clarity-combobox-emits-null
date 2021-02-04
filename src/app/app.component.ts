@@ -8,11 +8,18 @@ import { Component } from '@angular/core';
 export class AppComponent  {
   letterCombos = ['ab', 'ac', 'ad'];
   currentCombo: string;
+  display: string;
   get selected(): string {
     return this.currentCombo;
   }
   set selected(combo: string) {
     console.log(combo);
+    if (combo === null) {
+      this.display = 'emitted null!';
+    }
+    else {
+      this.display = combo;
+    }
     this.currentCombo = combo;
   }
 }
