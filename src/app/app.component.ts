@@ -5,7 +5,14 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent  {
   letterCombos = ['ab', 'ac', 'ad'];
-  selected: string;
+  currentCombo: string;
+  get selected(): string {
+    return this.currentCombo;
+  }
+  set selected(combo: string) {
+    console.log(combo);
+    this.currentCombo = combo;
+  }
 }

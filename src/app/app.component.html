@@ -1,6 +1,5 @@
 <clr-combobox-container>
-  <label>Provider:</label>
-  <clr-combobox [(ngModel)]="selected" name="prv-drpdwn" placeholder="Select a letter combo">
+  <clr-combobox [(ngModel)]="selected" placeholder="Select a letter combo">
     <clr-options>
       <clr-option *clrOptionItems="let combo of letterCombos" [clrValue]="combo">{{combo}}</clr-option>
     </clr-options>
